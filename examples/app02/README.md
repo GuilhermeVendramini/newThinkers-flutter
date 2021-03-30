@@ -1,8 +1,20 @@
-# app01 - Counter
+# app02 - Counter
 
-Simple counter.
+Cupertino counter.
 
-<center><img src="app01.png?raw=true" height="400"></center>
+<center><img src="app02.png?raw=true" height="400"></center>
+
+## Material VS Cupertino
+
+| Material | Cupertino  |
+| ------- | --- |
+| MaterialApp | CupertinoApp |
+| ThemeData | CupertinoThemeData |
+| Colors | CupertinoColors |
+| TextTheme | CupertinoTextThemeData |
+| Scaffold | CupertinoPageScaffold |
+| AppBar | CupertinoNavigationBar |
+| ElevatedButton | CupertinoButton |
 
 ## Getting Started
 

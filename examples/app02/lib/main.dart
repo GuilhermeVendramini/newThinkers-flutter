@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,19 +7,16 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return CupertinoApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
-        scaffoldBackgroundColor: Colors.grey.shade300,
-        textTheme: TextTheme(
-          bodyText2: TextStyle(
-            color: Colors.blueGrey,
+      theme: CupertinoThemeData(
+        scaffoldBackgroundColor: CupertinoColors.systemGrey,
+        textTheme: CupertinoTextThemeData(
+          primaryColor: CupertinoColors.black,
+          textStyle: TextStyle(
+            color: CupertinoColors.white,
             fontSize: 18.0,
           ),
-        ),
-        appBarTheme: AppBarTheme(
-          centerTitle: true,
         ),
       ),
       home: MyHomePage(title: 'Counter'),
@@ -62,13 +59,17 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  final _divider20 = const SizedBox(
+    height: 20.0,
+  );
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text(widget.title),
       ),
-      body: Center(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -81,21 +82,24 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: TextStyle(
-                color: _counter >= 1 ? Colors.blue : Colors.deepOrange,
+                color: _counter >= 1
+                    ? CupertinoColors.activeBlue
+                    : CupertinoColors.activeOrange,
                 fontSize: 36.0,
               ),
             ),
-            const SizedBox(
-              height: 20.0,
-            ),
+            _divider20,
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.blue,
-                    maxRadius: 30.0,
+                  Container(
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: CupertinoColors.activeBlue,
+                      shape: BoxShape.circle,
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -104,9 +108,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  CircleAvatar(
-                    backgroundColor: Colors.deepOrange,
-                    maxRadius: 30.0,
+                  Container(
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: CupertinoColors.activeOrange,
+                      shape: BoxShape.circle,
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -123,31 +130,24 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                        Colors.white,
-                      ),
-                    ),
+                  CupertinoButton(
+                    color: CupertinoColors.white,
                     child: const Text(
                       '+ 1',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue,
+                        color: CupertinoColors.activeBlue,
                       ),
                     ),
                     onPressed: _incrementCounter,
                   ),
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                        Colors.black,
-                      ),
-                    ),
+                  CupertinoButton(
+                    color: CupertinoColors.black,
+                    pressedOpacity: 0.4,
                     child: const Text(
                       '- 1',
                       style: TextStyle(
-                        color: Colors.deepOrange,
+                        color: CupertinoColors.activeOrange,
                       ),
                     ),
                     onPressed: _decrementCounter,
@@ -160,47 +160,46 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                        Colors.white,
-                      ),
-                    ),
+                  CupertinoButton(
+                    color: CupertinoColors.white,
                     child: const Text(
                       '+ 2',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue,
+                        color: CupertinoColors.activeBlue,
                       ),
                     ),
                     onPressed: () {
                       _incrementCounter(value: 2);
                     },
                   ),
-                  ElevatedButton(
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(
-                          Colors.black,
-                        ),
+                  CupertinoButton(
+                    color: CupertinoColors.black,
+                    pressedOpacity: 0.4,
+                    child: const Text(
+                      '- 2',
+                      style: TextStyle(
+                        color: CupertinoColors.activeOrange,
                       ),
-                      child: const Text(
-                        '- 2',
-                        style: TextStyle(
-                          color: Colors.deepOrange,
-                        ),
-                      ),
-                      onPressed: () {
-                        _decrementCounter(value: 2);
-                      }),
+                    ),
+                    onPressed: () {
+                      _decrementCounter(value: 2);
+                    },
+                  ),
                 ],
               ),
             ),
+            _divider20,
+            CupertinoButton(
+              color: CupertinoColors.systemIndigo,
+              pressedOpacity: 0.4,
+              child: const Text(
+                'Reset',
+              ),
+              onPressed: _resetValues,
+            ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.refresh),
-        onPressed: _resetValues,
       ),
     );
   }
