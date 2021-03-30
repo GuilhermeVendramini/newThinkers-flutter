@@ -1,4 +1,4 @@
-# app01 - Counter
+# Counter App01 - Counter app using Material
 
 Simple counter.
 

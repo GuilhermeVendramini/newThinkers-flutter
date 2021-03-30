@@ -1,4 +1,4 @@
-# app02 - Counter
+# Counter App02 - Counter app using Cupertino.
 
 Cupertino counter.
 
