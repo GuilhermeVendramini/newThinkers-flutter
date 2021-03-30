@@ -7,4 +7,4 @@
 
 ## Splitting widgets
 
-- Splitting Counter App03
+- Splitting Counter App03 - Splitted Counter app using Material.
