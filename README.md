@@ -2,6 +2,7 @@
 
 ## Simple examples
 
+- [Start App00](/examples/app00/) - Starting a new app
 - [Counter App01](/examples/app01/) - Counter app using Material.
 - [Counter App02](/examples/app02/) - Counter app using Cupertino.
 
