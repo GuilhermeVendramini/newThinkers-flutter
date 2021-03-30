@@ -2,7 +2,7 @@
 
 Simple counter.
 
-<center><img src="app01.png?raw=true" height="400"></center>
+<img src="app01.png?raw=true" height="400">
 
 ## Getting Started
 

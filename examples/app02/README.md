@@ -2,7 +2,7 @@
 
 Cupertino counter.
 
-<center><img src="app02.png?raw=true" height="400"></center>
+<img src="app02.png?raw=true" height="400">
 
 ## Material VS Cupertino
 
