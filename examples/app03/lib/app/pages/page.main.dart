@@ -2,16 +2,16 @@ import 'package:app03/app/shared/widgets/buttons/widget.button.default.dart';
 import 'package:app03/app/shared/widgets/circles/widget.circle.labelText.dart';
 import 'package:flutter/material.dart';
 
-class WidgetPageMain extends StatefulWidget {
-  WidgetPageMain({Key key, this.title}) : super(key: key);
+class PageMain extends StatefulWidget {
+  PageMain({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _WidgetPageMainState createState() => _WidgetPageMainState();
+  _PageMainState createState() => _PageMainState();
 }
 
-class _WidgetPageMainState extends State<WidgetPageMain> {
+class _PageMainState extends State<PageMain> {
   int _counter = 0, _max = 0, _min = 0;
 
   void _incrementCounter({int value = 1}) {

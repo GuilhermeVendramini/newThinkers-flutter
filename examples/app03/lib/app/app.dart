@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'shared/widgets/pages/widget.page.main.dart';
+import 'pages/page.main.dart';
 
 class App extends StatelessWidget {
   @override
@@ -20,7 +20,7 @@ class App extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: WidgetPageMain(title: 'Counter'),
+      home: PageMain(title: 'Counter'),
     );
   }
 }
