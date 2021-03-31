@@ -13,3 +13,4 @@
 ## Navigation
 
 - [No routes App04](/examples/app04/) - Navigation without routes.
+- [With routes App05](/examples/app05/) - Navigation with routes.
