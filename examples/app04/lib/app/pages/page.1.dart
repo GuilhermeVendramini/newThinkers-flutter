@@ -19,22 +19,29 @@ class Page1 extends StatelessWidget {
             ElevatedButton(
               child: Text('Próxima >>'),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Page2()));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Page2(),
+                    settings: RouteSettings(
+                      arguments: 'Vindo da Page1',
+                    ),
+                  ),
+                );
               },
             ),
             ElevatedButton(
               child: Text('Última >>'),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Page3()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Page3()));
               },
             ),
             ElevatedButton(
               child: Text('Substitua Page1 pela Page3'),
               onPressed: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => Page3()));
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (context) => Page3()));
               },
             ),
           ],

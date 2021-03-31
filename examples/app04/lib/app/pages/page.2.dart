@@ -6,6 +6,7 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final String args = ModalRoute.of(context).settings.arguments ?? '';
     return Scaffold(
       appBar: AppBar(
         title: Text('Page 2'),
@@ -15,6 +16,7 @@ class Page2 extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text('Page 2'),
+            Text('Argumento: $args'),
             ElevatedButton(
               child: Text('Próxima >>'),
               onPressed: () {
