@@ -9,3 +9,7 @@
 ## Splitting widgets
 
 - [Splitting Counter App03](/examples/app03/) - Splitted Counter app using Material.
+
+## Navigation
+
+- [No routes App04](/examples/app04/) - Navigation without routes.
