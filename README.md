@@ -8,4 +8,4 @@
 
 ## Splitting widgets
 
-- Splitting Counter App03 - Splitted Counter app using Material.
+- [Splitting Counter App03](/examples/app03/) - Splitted Counter app using Material.

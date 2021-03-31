@@ -1,4 +1,4 @@
-# app03
+# Counter App03 - Splitted Counter app using Material
 
 A new Flutter project.
 
