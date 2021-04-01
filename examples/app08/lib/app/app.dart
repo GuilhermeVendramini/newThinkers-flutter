@@ -7,6 +7,13 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodyText2: TextStyle(
+            fontSize: 20.0,
+          ),
+        )
+      ),
       home: PageMain(),
     );
   }

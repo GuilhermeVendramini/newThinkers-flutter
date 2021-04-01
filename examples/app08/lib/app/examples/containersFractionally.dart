@@ -15,8 +15,6 @@ class ConatinersFractionally extends StatelessWidget {
     final double _factor = 0.5;
     final _result = _maxHeightContainer / _items * _factor;
 
-    print(_result);
-
     return Center(
       child: Container(
         decoration: BoxDecoration(

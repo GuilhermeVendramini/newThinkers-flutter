@@ -1,3 +1,6 @@
+import 'package:app08/app/examples/constraintsExample.dart';
+import 'package:app08/app/examples/expandedExample.dart';
+import 'package:app08/app/examples/fittedBoxExample.dart';
 import 'package:app08/app/examples/container100.dart';
 import 'package:app08/app/examples/containers50And50.dart';
 import 'package:app08/app/examples/containersFlexible.dart';
@@ -10,10 +13,13 @@ class PageMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: //Container100(),
+      body: Container100(),
           //Conatiners50And50(),
           //ConatinersFlexible(),
-          ConatinersFractionally(),
+          //ConatinersFractionally(),
+          //ConstraintsExample(),
+          //ExpandedExample(),
+          //FittedBoxExample(),
     );
   }
 }
