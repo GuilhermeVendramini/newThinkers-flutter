@@ -13,13 +13,13 @@ class PageMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container100(),
+      body: //Container100(),
           //Conatiners50And50(),
           //ConatinersFlexible(),
           //ConatinersFractionally(),
           //ConstraintsExample(),
           //ExpandedExample(),
-          //FittedBoxExample(),
+          FittedBoxExample(),
     );
   }
 }

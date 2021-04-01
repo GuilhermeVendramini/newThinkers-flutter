@@ -32,7 +32,7 @@ class FittedBoxExample extends StatelessWidget {
             width: 150,
             height: 150,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: Colors.blue,
             ),
             child: FittedBox(
               child: Icon(
