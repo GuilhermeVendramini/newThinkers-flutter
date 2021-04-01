@@ -18,3 +18,4 @@
 ## Form
 
 - [Counter Form App06](/examples/app06/) - Simple counter app.
+- [User register App07](/examples/app07/) - User register form.
