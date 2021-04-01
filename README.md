@@ -19,3 +19,11 @@
 
 - [Counter Form App06](/examples/app06/) - Simple counter app.
 - [User register App07](/examples/app07/) - User register form.
+
+## Responsive
+
+- [Responsive App08](/examples/app07/) - Responsive examples.
+
+Helpers:
+- [Creating responsive and adaptive apps](https://flutter.dev/docs/development/ui/layout/adaptive-responsive)
+- [Understanding constraints](https://flutter.dev/docs/development/ui/layout/constraints)
