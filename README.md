@@ -17,4 +17,4 @@
 
 ## Form
 
-- [Counter Form App06](/examples/app06/) - Simple counter app
+- [Counter Form App06](/examples/app06/) - Simple counter app.
