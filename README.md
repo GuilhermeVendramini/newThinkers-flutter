@@ -24,6 +24,6 @@
 
 - [Responsive App08](/examples/app07/) - Responsive examples.
 
-Helpers:
+Documentations:
 - [Creating responsive and adaptive apps](https://flutter.dev/docs/development/ui/layout/adaptive-responsive)
 - [Understanding constraints](https://flutter.dev/docs/development/ui/layout/constraints)
