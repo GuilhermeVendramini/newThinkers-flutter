@@ -14,3 +14,7 @@
 
 - [No routes App04](/examples/app04/) - Navigation without routes.
 - [With routes App05](/examples/app05/) - Navigation with routes.
+
+## Form
+
+- [Counter Form App06](/examples/app06/) - Simple counter app
